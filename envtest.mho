@@ -1,0 +1,3 @@
+page at /envtest
+    give back 200 env.MOHIO_TASK2_TEST_VAR
+page: done

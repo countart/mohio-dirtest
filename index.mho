@@ -1,3 +1,0 @@
-page at /
-    give back 200 "<h1>Directory mode works</h1>"
-page: done
