@@ -1,3 +1,13 @@
 page at /
-    give back 200 "<h1>Directory mode works</h1>"
+    give back 200 "<h1>AI toggle test</h1>"
+page: done
+
+page at /ai-test
+    hold amt 100
+    ai.decide isFraudulent returns boolean
+        weigh amt
+        not confident
+            give back false
+    ai.decide: done
+    give back 200 isFraudulent
 page: done

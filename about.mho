@@ -1,3 +1,0 @@
-page at /about
-    give back 200 "<h1>About page</h1>"
-page: done
