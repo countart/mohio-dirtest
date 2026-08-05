@@ -1,15 +1,3 @@
-shape Cmd
-    action as text required
-shape: done
-
-listen for
-    new sh.Cmd
-        check action
-            when "become_admin"
-                grant role "admin"
-            otherwise
-                grant role "guest"
-        check: done
-        give back 200 ("session: " & session.id)
-    new: done
-listen: done
+page at /
+    give back 200 "<h1>Directory mode works</h1>"
+page: done
